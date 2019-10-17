@@ -26,6 +26,7 @@ install:
   - pip install git+https://github.com/intake/filesystem_spec/ --no-deps
 
 script:
+  - pip freeze
   - py.test -vv s3fs
 
 notifications:
